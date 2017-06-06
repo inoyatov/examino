@@ -13,5 +13,5 @@ deploy:
         - "python examino/manage.py migrate --all --settings=settings.heroku"
         - restart
 install:
-      - pip install -r requirements.txt
+      - pip install -r requirments.txt
 script: "coverage run --source=. examino/manage.py test -v 2"
