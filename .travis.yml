@@ -10,8 +10,8 @@ deploy:
     app: examino 
     run:
         - "ls ./"
-        - "python examino/manage.py syncdb --noinput --settings=settings.heroku"
-        - "python examino/manage.py migrate --all --settings=settings.heroku"
+        - "python ./examino/manage.py syncdb --noinput --settings=settings.heroku"
+        - "python ./examino/manage.py migrate --all --settings=settings.heroku"
         - restart
 install:
       - pip install -r requirments.txt
