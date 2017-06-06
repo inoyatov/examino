@@ -9,6 +9,7 @@ deploy:
     strategy: git
     app: examino 
     run:
+        - "ls ./"
         - "python examino/manage.py syncdb --noinput --settings=settings.heroku"
         - "python examino/manage.py migrate --all --settings=settings.heroku"
         - restart
