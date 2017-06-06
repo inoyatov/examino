@@ -14,5 +14,4 @@ deploy:
         - restart
 install:
       - pip install -r requirments.txt
-script: "coverage run --source=./examino/manage.py test -v 2"
-# TODO: Fix
+script: "coverage run --source=. ./examino/manage.py test -v 2"
